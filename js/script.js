@@ -1,7 +1,7 @@
-// Copyright (c) 2020 Mohamad All rights reserved
+// Copyright (c) 2023 Mohamad All rights reserved
 //
 // Created by: Mohamad
-// Created on: Sep 2020
+// Created on: April 27
 // This file contains the JS functions for index.html
 
 // Check which radio button is selected
@@ -9,7 +9,7 @@ const isPositive = document.getElementById("positive").checked
 const isNegative = document.getElementById("negative").checked
 
 // Define randomNumber
-const randomNumber = null
+const randomNumber = 0
 
 /*
  * This function generates a random number between -6 and 6 (excluding 0)
@@ -17,10 +17,10 @@ const randomNumber = null
 function generateNumber() {
   // Generate random number based on user's input
   if ((isPositive = true)) {
-    const randomNumber = Math.floor(Math.random() * 6) + 1
+    randomNumber = Math.floor(Math.random() * 6) + 1
     // returns a random integer from 1 to 6 into variable "randomNumber"
   } else {
-    const randomNumber = Math.floor(Math.random() * 6) - 6
+    randomNumber = Math.floor(Math.random() * 6) - 6
     // returns a random integer from -6 to -1 into variable "randomNumber"
   }
 
