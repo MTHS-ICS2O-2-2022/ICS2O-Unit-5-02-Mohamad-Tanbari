@@ -28,10 +28,12 @@ function generateNumber() {
   // Generate random number based on user's input
   if (isPositive == true) {
     randomNumber = Math.floor(Math.random() * 6) + 1
+    // Output number to user
     document.getElementById("answer").innerHTML = "The number is: " + randomNumber
     // returns a random integer from 1 to 6 into variable "randomNumber"
   } else if (isNegative == true){
     randomNumber = Math.floor(Math.random() * 6) - 6
+    // Output number to user
     document.getElementById("answer").innerHTML = "The number is: " + randomNumber
     // returns a random integer from -6 to -1 into variable "randomNumber"
   }
