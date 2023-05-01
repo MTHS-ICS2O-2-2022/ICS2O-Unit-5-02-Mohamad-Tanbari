@@ -26,13 +26,14 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// Check which answer the user has chosen
-	if (answer == "p") {
-		randomNumber = float64(rand.Intn(6-1)+1)
+	switch answer {
+	case "p":
+		randomNumber = float64(rand.Intn(6-1) + 1)
 		fmt.Println("\nYour random number is: ", randomNumber)
-	} else if (answer == "n") {
+	case "n":
 		randomNumber = float64(rand.Intn(6-1)+1) * -1
 		fmt.Println("\nYour random number is: ", randomNumber)
-	} else {
+	default:
 		fmt.Println("\nInvalid input")
 	}
 
