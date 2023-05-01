@@ -4,16 +4,6 @@
 // Created on: April 27
 // This file contains the JS functions for index.html
 
-// Check which radio button is selected
-
-// Check if user has selected both radio buttons
-if (isPositive && isNegative) {
-  document.getElementById("answer").innerHTML = "Please select only one option."
-  // Check if user has not selected any radio buttons
-} else if (!(isPositive && isNegative)) {
-  document.getElementById("answer").innerHTML = "Please select an option."
-}
-
 /*
  * This function generates a random number beatween -6 and 6 (excluding 0)
  */
